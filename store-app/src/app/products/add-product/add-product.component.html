@@ -1,0 +1,27 @@
+<div class="input-group mb-2">
+  <div class="mb-3 ms-2">
+    <label class="form-label">Title</label>
+    <input type="text" class="form-control" [(ngModel)]="product.title" />
+  </div>
+
+  <div class="mb-3 ms-2">
+    <label class="form-label">description</label>
+    <input type="text" class="form-control" [(ngModel)]="product.description" />
+  </div>
+
+  <div class="mb-3 ms-2">
+    <label class="form-label">price</label>
+    <input type="text" class="form-control" [(ngModel)]="product.price" />
+  </div>
+
+  <div class="mb-3 ms-2">
+    <label class="form-label">Category</label>
+    <select class="form-select" name="" id="" [(ngModel)]="product.category">
+      <option selected value="">აირჩიეთ კატეგორია</option>
+      <option value="phones">Phones</option>
+      <option value="clothes">Clothes</option>
+      <option value="laptops">Laptops</option>
+    </select>
+  </div>
+</div>
+<button class="btn btn-primary mb-2" (click)="add()">Add Product</button>
